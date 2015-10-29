@@ -1,7 +1,7 @@
 react-hot-chat
 ==============
 
-Frontend for a chat webapp.
+Frontend for a chat webapp. Uses [react-hot-boilerplate](https://github.com/gaearon/react-hot-boilerplate) as boilerplate.
 
 ### Usage
 
@@ -25,8 +25,8 @@ You may want to change the host in `server.js` and `webpack.config.js` from `0.0
 
 ### Dependencies
 
-* React
-* Webpack
+* [react](https://github.com/facebook/react)
+* [webpack](https://github.com/webpack/webpack)
 * [webpack-dev-server](https://github.com/webpack/webpack-dev-server)
 * [babel-loader](https://github.com/babel/babel-loader)
 * [react-hot-loader](https://github.com/gaearon/react-hot-loader)
