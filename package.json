@@ -1,14 +1,14 @@
 {
-  "name": "react-hot-boilerplate",
+  "name": "react-hot-chat",
   "version": "1.0.0",
-  "description": "Boilerplate for ReactJS project with hot code reloading",
+  "description": "A chat app created for learning purposes",
   "scripts": {
     "start": "node server.js",
     "lint": "eslint src"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gaearon/react-hot-boilerplate.git"
+    "url": "https://github.com/vesahyp/react-hot-chat.git"
   },
   "keywords": [
     "react",
@@ -21,12 +21,12 @@
     "edit",
     "webpack"
   ],
-  "author": "Dan Abramov <dan.abramov@me.com> (http://github.com/gaearon)",
+  "author": "Vesa Hyppönen <vesa.hypponen@gmail.com> (http://github.com/vesahyp)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/gaearon/react-hot-boilerplate/issues"
+    "url": "https://github.com/vesahyp/react-hot-chat/issues"
   },
-  "homepage": "https://github.com/gaearon/react-hot-boilerplate",
+  "homepage": "https://github.com/vesahyp/react-hot-chat",
   "devDependencies": {
     "babel-core": "^5.4.7",
     "babel-eslint": "^3.1.9",
