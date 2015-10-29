@@ -1,0 +1,288 @@
+* {
+  -webkit-transition: all 0.45s ease;
+  -moz-transition:    all 0.45s ease;
+  -ms-transition:     all 0.45s ease;
+  -o-transition:      all 0.45s ease;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: rgb(34,34,34);
+  font-family: "Roboto Condensed", sans-serif;
+  width : 100%;
+  height : 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+}
+
+.splash {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background: rgb(34,34,34);
+}
+
+.splashImage {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.splashHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.appHeader {
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  font-size: 360%;
+  background : rgb(34,34,34);
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  z-index: 100;
+}
+
+.appTitle {
+  display: inline-block;
+  color: rgb(0,208,255);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.logo {
+  max-height: 75%;
+  vertical-align: middle;
+}
+
+.buttonBack {
+  position: absolute;
+  left: 10px;
+  color: rgb(197,102,90);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+}
+
+.backHidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.chatList {
+  position: absolute;
+  top: 60px;
+  bottom: 0px;
+  width: 100%;
+  overflow: auto;
+  background: rgb(247,247,247);
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+}
+
+.chatListHidden {
+  transform: translateX(-20%);
+  opacity: 0.5;
+}
+
+.chatContainer {
+  height: 60px;
+  border-bottom: 1px solid rgba(34,34,34,0.1);
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+}
+.chatContainer:active {
+  background: rgb(197,238,247);
+}
+
+.chat {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.chatRecipient {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 70px;
+  font-weight: bold;
+  white-space: nowrap ;
+  overflow: hidden;
+}
+
+.chatLatest {
+  position: absolute;
+  left: 10px;
+  right: 70px;
+  bottom: 10px;
+  opacity: 0.6;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: nowrap ;
+  overflow: hidden;
+}
+
+.chatDate {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  opacity: 0.6;
+}
+
+.chatDetails {
+  position: absolute;
+  top: 60px;
+  width: 100%;
+  bottom: 0px;
+  background: rgb(247,247,247);
+  -webkit-overflow-scrolling: touch;
+  z-index: 2;
+}
+
+.messageList {
+  position: absolute;
+  overflow: auto;
+  top: 0px;
+  bottom: 40px;
+  width: 100%;
+}
+
+.chatDetailsHidden {
+  transform: translateX(100%);
+}
+
+.message {
+  margin: 10px 10px;
+}
+
+.messageContainer {
+  position: relative;
+  width: 100%;
+}
+
+.messageContent {
+  max-width: 80%;
+  border-radius: 5px;
+  background : rgb(197,238,247);
+  padding: 8px;
+  display: inline-block;
+}
+
+.messageContentYou {
+  max-width: 80%;
+  border-radius: 5px;
+  background : rgb(206,206,206);
+  padding: 8px;
+  display: inline-block;
+}
+
+.messageAuthor {
+  left: 10px;
+  top: -10px;
+  font-weight: bold;
+}
+
+.messageTime {
+  position: absolute;
+  right: 10px;
+  opacity: 0.6;
+}
+
+.messageImage {
+  max-width: 100%;
+  padding: 2px;
+}
+
+.messageForm {
+  width: 100%;
+  position: absolute;
+  min-height: 40px;
+  bottom: 0px;
+  background-color: rgb(255,255,255);
+  border-top: 1px solid rgba(34,34,34,0.1);
+}
+
+.messageFormContainer {
+  float: left;
+  width: 50%;
+}
+
+.messageFileUpload {
+  width: 0px;
+  height: 0px;
+  pointer-events: none;
+}
+
+.messageButton {
+  color : rgb(249,249,249);
+  border-radius: 4px;
+  background-color: rgb(197,102,90);
+  padding: 2px 5px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.3);
+  box-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.messageSendButtonHidden {
+  opacity: 0.5;
+}
+
+.messageFormTextarea {
+  position: relative;
+}
+
+.messageFormButtons {
+  position: absolute;
+  float: left;
+  width: 50%;
+  bottom: 10px;
+  right: 10px;
+  font-size: 125%;
+}
+
+textarea, .textarea-size {
+  min-height: 40px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: 0px;
+  overflow: hidden;
+  width: 100%;
+}
+
+textarea {
+  height: 100%;
+  position: absolute;
+  resize:none;
+  white-space: normal;
+}
+
+textarea:focus {
+  outline: 0;
+}
+
+.textarea-size {
+  visibility: hidden;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
